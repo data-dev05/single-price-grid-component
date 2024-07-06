@@ -5,3 +5,47 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: $Light-Gray;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $Family-Karla;
+    font-size: $Font-size;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#card {
+    width: 350px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+section {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#join-section {
+    background-color: white;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+#monthly-section {
+    background-color: $Cyan;
+}
+
+#why-section {
+    background-color: hsl(179, 62%, 45%);
+    border-radius: 0 0 0.5rem 0.5rem;
+}
