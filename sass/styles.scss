@@ -89,6 +89,12 @@ ul {
         padding: 1rem;
         border-radius: 0.4rem;
         margin-top: 1rem;
+        box-shadow: 0 0.3rem 1rem gray;
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 0.1rem 0.5rem black;
+        }
     }
 }
 
@@ -104,7 +110,40 @@ h2 {
 
 @media (min-width: 768px) {
     #card {
-        grid-template-columns: 2fr;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: calc(768px - 6vw);
+    }
+
+    section {
+        padding-left: 2rem;
+    }
+
+    #join-section {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        justify-content: center;
+
+        h1 {
+            margin-bottom: 0.8rem;
+            font-size: 1.6rem;
+        }
+
+        #guarantee {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    #monthly-section {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-radius: 0 0 0 0.5rem;
+    }
+
+    #why-section {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        border-radius: 0 0 0.5rem 0;
     }
 }
